@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sycamore</title>
+        <link rel="icon" type="image/png" href="https://app.sycamoreschool.com/images/ss_logo_red.png"/>
+    </head>
+    <body style="background-color:black;">
+        <script>
+        function create() {
+            var url = document.getElementById('input').value;
+            var win = window.open();
+            win.document.body.style.margin = '0';
+            win.document.body.style.height = '100vh';
+            var iframe = win.document.createElement('iframe');
+            iframe.style.border = 'none';
+            iframe.style.width = '100%';
+            iframe.style.height = '100%';
+            iframe.style.margin = '0';
+            iframe.src = url;
+            win.document.body.appendChild(iframe);
+        }
+        </script>
+        <input type="text" value="https://codedamn.com/playground/HQI4oehdptZjPwjCNG97S" placeholder="about:blank" id='input' autofocus>
+        <button onclick='create()'>Run</button>
+    </body>
+</html>
